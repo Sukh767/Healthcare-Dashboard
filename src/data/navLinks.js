@@ -1,13 +1,30 @@
+// src/data/navLinks.js
+import {
+  CalendarDays,
+  Settings,
+  LayoutDashboard,
+  ArrowDownUp,
+  ChartLine,
+  CalendarPlus2,
+  Phone,
+  MessageCircleMore,
+} from "lucide-react";
+
 export const navLinks = {
   general: [
-    { name: "Dashboard", icon: "📊" },
-    { name: "History", icon: "📜" },
-    { name: "Calendar", icon: "📅" },
-    { name: "Appointments", icon: "🩺" },
-    { name: "Statistics", icon: "📈" },
+    { name: "Dashboard", icon: LayoutDashboard, color: "#007BFF" },
+    { name: "History", icon: ArrowDownUp, color: "#757575" },
+    { name: "Calendar", icon: CalendarDays, color: "#757575" },
+    { name: "Appointments", icon: CalendarPlus2, color: "#757575" },
+    { name: "Statistics", icon: ChartLine, color: "#757575" },
   ],
   tools: [
-    { name: "Chat", icon: "💬" },
-    { name: "Support", icon: "🛟" },
+    { name: "Chat", icon: MessageCircleMore, color: "#757575" },
+    { name: "Support", icon: Phone, color: "#757575" },
   ],
+  settings: {
+    name: "Setting",
+    icon: Settings,
+    color: "#757575",
+  },
 };

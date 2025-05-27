@@ -1,54 +1,49 @@
-/* File: src/App.css */
-/* body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f2f6fc;
-} */
-
-.app-container {
+.app {
   display: flex;
-  min-height: 100vh;
+  height: 100vh;
+  background-color: #f9fbfc;
 }
 
-.main-content {
-  flex: 1;
+.app__content {
+  flex-grow: 1;
+  overflow: auto;
   display: flex;
   flex-direction: column;
 }
 
-.dashboard {
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-/* Layout grid for top and bottom sections */
-.top-section {
-  display: flex;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-}
-
-.bottom-section {
+/* Grid Layout for main content sections */
+.app__grid {
   display: grid;
-  grid-template-columns: 2fr 1.5fr 1fr;
-  gap: 1.5rem;
+  grid-template-rows: auto auto;
+  gap: 2rem;
+  padding: 1.5rem;
+}
+
+/* BEM-styled sections */
+.app__section {
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+}
+
+.app__section--overview {
+  /* Adjust if DashboardMainContent has internal padding already */
+  padding: 0;
+}
+
+.app__section--appointments {
+  /* Additional custom styles if needed */
 }
 
 /* Responsive tweaks */
-@media (max-width: 1024px) {
-  .bottom-section {
-    grid-template-columns: 1fr;
-  }
-}
-
 @media (max-width: 768px) {
-  .top-section {
-    flex-direction: column;
+  .app__grid {
+    padding: 1rem;
+    gap: 1rem;
   }
 
-  .dashboard {
-    padding: 1rem;
+  .app__section {
+    padding: 0.75rem;
   }
 }

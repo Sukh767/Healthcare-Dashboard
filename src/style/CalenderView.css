@@ -1,0 +1,147 @@
+.calendar-view {
+  /* background-color: #fff; */
+  border-radius: 12px;
+  padding: 24px;
+  /* box-shadow: 0 2px 6px rgba(0,0,0,0.05); */
+  
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.calendar-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #111827;
+}
+
+.calendar-nav button {
+  padding: 4px;
+  border: none;
+  background: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  color: #4b5563;
+}
+
+.calendar-week {
+  margin-bottom: 24px;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.day-label {
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.calendar-dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.date-number {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.date-number.highlighted {
+  color: #2563eb;
+}
+
+.calendar-slots {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 16px;
+}
+
+.slot-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+}
+
+.slot {
+  font-size: 0.75rem;
+  padding: 2px 4px;
+  border-radius: 6px;
+}
+
+.text-gray {
+  color: #4b5563;
+}
+
+.text-muted {
+  color: #d1d5db;
+}
+
+.highlight-blue {
+  background-color: #2563eb;
+  color: white;
+  font-weight: 500;
+}
+
+.highlight-blue-light {
+  background-color: #93c5fd;
+  color: white;
+  font-weight: 500;
+}
+
+.highlight-purple {
+  background-color: #a78bfa;
+  color: white;
+  font-weight: 500;
+}
+
+.calendar-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .calendar-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.card {
+  padding: 16px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-blue {
+  background-color: #2563eb;
+}
+
+.card-purple {
+  background-color: #d7c4f8;
+}
+
+.icon-large {
+  font-size: 1.5rem;
+}

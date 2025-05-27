@@ -1,17 +1,23 @@
-import React from 'react'
-import Sidebar from './components/Sidebar'
-import Header from './components/Header'
-import './App.css'
+import React from "react";
+import Sidebar from "./components/Sidebar";
+import DashboardMainContent from "./components/DashboardMainContent";
+import SimpleAppointmentCard from "./components/SimpleAppointmentCard";
+import "./App.css";
 
-const App = () => {
+function App() {
   return (
-    <div className='app-container'>
-      <Sidebar/>
-      <div className="main-content">
-        <Header/>
+    <div className="app">
+      <Sidebar />
+
+      <div className="app__content">
+        <div className="app__grid">
+          <div className="app__section app__section--overview">
+            <DashboardMainContent />
+          </div>
+        </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
