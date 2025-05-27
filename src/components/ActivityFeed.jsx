@@ -3,10 +3,10 @@ import '../style/ActivityFeed.css';
 
 const ActivityFeed = () => {
   return (
-    <section className="activity">
+    <section className="activity bg-secondary">
       <div className="activity__header">
-        <h2 className="activity__title">Activity</h2>
-        <p className="activity__subtitle">3 appointments on this week</p>
+        <h2 className="activity__title text-secondary">Activity</h2>
+        <p className="activity__subtitle text-muted">3 appointments on this week</p>
       </div>
 
       <div className="activity__chart">

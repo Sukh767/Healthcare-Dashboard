@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 1rem;
+  padding: 2rem;
   border-radius: 12px;
 }
 
@@ -51,7 +51,7 @@
 .dashboard-main__middle {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .dashboard-main__anatomy {
@@ -68,7 +68,7 @@
 }
 
 .dashboard-main__activity {
-  padding: 1rem;
+  /* padding: 1rem; */
   border-radius: 12px;
   border: 1px solid #e0e0e0;
 }
@@ -78,7 +78,7 @@
   flex-direction: column;
   gap: 2rem;
   background-color: #daecf7;
-  padding: 1rem;
+  padding: 2rem;
   border-radius: 12px;
 }
 

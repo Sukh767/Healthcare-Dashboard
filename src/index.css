@@ -1,53 +1,88 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 :root {
-  --color-primary: #06b6d4;
-  --color-secondary: #3b82f6;
-  --color-success: #10b981;
-  --color-warning: #f59e0b;
-  --color-danger: #ef4444;
-  --color-gray-50: #f9fafb;
-  --color-gray-100: #f3f4f6;
-  --color-gray-500: #6b7280;
-  --color-gray-900: #111827;
+  --primary-color: #00e2ee;
+  --secondary-color: #010a4a;
+  --primary-bg-color: #3734a9;
+  --secondary-bg-color: #dde2f9;
+  --right-panel-bg-color: #f6faff;
+  --sidebar-bg-color: #f6faff;
+  --secondary-text-color: #abb3b7;
+  --sidebar-heading-text-color: #d9dde2;
+  --sidebar-links-color: #a7aab0;
+  
+
   --border-radius: 12px;
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --primary-shaodw: rgba(99, 99, 99, 0.043) 0px 2px 8px 0px;
 }
 
-body{
-  font-family: 'Ubuntu','Courier New', Courier, monospace;
-  background: #f0f0f0;
+body {
+  font-family: 'Ubuntu', 'Courier New', Courier, monospace;
+  background-color: var(--secondary-bg-color);
 }
 
+/* Text Color Utility Classes */
 .text-primary {
-  color: #1e2a78;
+  color: var(--primary-color);
 }
 
 .text-secondary {
-  color: #9da4b1;
-}
-.text-tertiary {
-  color: #333;
+  color: var(--secondary-color);
 }
 
-.subheading {
-  color: #9f9f9f;
+.text-primary-shade {
+  color: var(--primary-bg-color);
 }
 
-.text-highlight {
-  color: #2ec4b6;
+.text-secondary-shade {
+  color: var(--secondary-bg-color);
 }
 
-.primary__bg-color {
-  background-color: #1e2a89;
+.text-right-panel {
+  color: var(--right-panel-bg-color);
 }
-.secondary__bg-color {
-  background-color: #f7f9fc;
+
+.text-sidebar {
+  color: var(--sidebar-links-color);
+}
+
+.text-muted {
+  color: var(--secondary-text-color);
+}
+
+.sidebar-heading-text {
+  color: var(--sidebar-heading-text-color);
+}
+
+/* Background Utility Classes */
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
+.bg-secondary {
+  background-color: var(--secondary-color);
+}
+
+.bg-primary-shade {
+  background-color: var(--primary-bg-color);
+}
+
+.bg-secondary-shade {
+  background-color: var(--secondary-bg-color);
+}
+
+.bg-right-panel {
+  background-color: var(--right-panel-bg-color);
+}
+
+.bg-sidebar {
+  background-color: var(--sidebar-bg-color);
 }

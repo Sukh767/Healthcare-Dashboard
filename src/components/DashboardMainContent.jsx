@@ -5,7 +5,6 @@ import { BellIcon, SearchIcon, Plus, User } from "lucide-react";
 import AnatomySection from "./AnatomySection";
 import HealthStatusCards from "./HealthStatusCards";
 import ActivityFeed from "./ActivityFeed";
-import SimpleAppointmentCard from "./SimpleAppointmentCard";
 import CalenderView from "./CalendarView";
 import UpcomingSchedule from "./UpcomingSchedule";
 

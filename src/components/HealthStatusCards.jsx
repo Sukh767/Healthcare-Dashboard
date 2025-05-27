@@ -19,11 +19,11 @@ export default function HealthStatusCards() {
   return (
     <div className="health-cards">
       {healthStatusData.map((item, index) => (
-        <div key={index} className="health-card">
+        <div key={index} className="health-card ">
           <div className="health-card__header">
             <div className="health-card__icon">{item.icon}</div>
             <div className="health-card__info">
-              <h3 className="health-card__title">{item.name}</h3>
+              <h3 className="health-card__title text-secondary">{item.name}</h3>
               <p className="health-card__date">{item.date}</p>
             </div>
           </div>

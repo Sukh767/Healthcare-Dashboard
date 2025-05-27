@@ -16,14 +16,12 @@
   display: grid;
   grid-template-rows: auto auto;
   gap: 2rem;
-  padding: 1.5rem;
 }
 
-/* BEM-styled sections */
 .app__section {
   background-color: #ffffff;
   border-radius: 0.75rem;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  
   padding: 1rem;
 }
 
