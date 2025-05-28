@@ -4,7 +4,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #deb9f3;
 }
 
 .simple-card__info {
@@ -14,13 +13,13 @@
 
 .simple-card__title {
   font-weight: 500;
-  color: #111827;
   font-size: 0.875rem;
+  padding: 0.5rem;
 }
 
 .simple-card__time {
   font-size: 0.75rem;
-  color: #4b5563;
+  padding: 0.5rem;
 }
 
 .simple-card__icon {

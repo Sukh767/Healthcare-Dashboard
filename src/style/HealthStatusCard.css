@@ -30,7 +30,7 @@
 
 .health-card__title {
   font-weight: 600;
-  color: #1f2937;
+  line-height: 2rem;
   margin: 0;
 }
 
@@ -57,7 +57,7 @@
 }
 
 .health-card__progress--warning {
-  background-color: #ff7d5f; 
+  background-color: #f57154; 
 }
 
 .health-card__progress--critical {

@@ -1,65 +1,66 @@
-.anatomy-card {
-  background-color: #ffffff;
+.anatomy-section {
   border-radius: 1rem;
   padding: 1.5rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-  border: 1px solid #f3f4f6;
-}
-
-.anatomy-illustration-wrapper {
   display: flex;
   justify-content: center;
-  margin-bottom: 1rem;
 }
 
-.anatomy-illustration {
+.anatomy-section__image-wrapper {
   position: relative;
-  width: 12rem;
-  height: 20rem;
+  width: 100%;
+  max-width: 320px; 
 }
 
-.anatomy-illustration svg {
+.anatomy-section__image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0.75rem;
   display: block;
-  margin: 0 auto;
 }
 
-.heart-indicator,
-.log-indicator {
+.anatomy-section__indicator {
   position: absolute;
-  color: #ffffff;
-  font-size: 0.75rem;
-  font-weight: 500;
-  padding: 0.25rem 0.5rem;
-  border-radius: 9999px;
   display: flex;
   align-items: center;
   gap: 0.25rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-}
-
-.heart-indicator {
-  top: 4rem;
-  left: 0.5rem;
-  background-color: #2563eb; /* blue-600 */
-}
-
-.log-indicator {
-  bottom: 6rem;
-  left: 0;
-  background-color: #06b6d4; /* cyan-400 */
-}
-
-.anatomy-details-btn {
-  display: inline-block;
-  color: #2563eb;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: 500;
-  text-align: center;
-  border: none;
-  background: none;
-  cursor: pointer;
+  color: #ffffff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  z-index: 2;
 }
 
-.anatomy-details-btn:hover {
-  color: #1d4ed8; /* blue-700 */
+.anatomy-section__indicator--heart {
+  top: 4rem;
+  right: 1rem;
+  background-color: #2563eb;
+}
+
+.anatomy-section__indicator--log {
+  bottom: 6rem;
+  left: 1rem;
+  background-color: #06b6d4;
+}
+
+.anatomy-section__icon {
+  width: 12px;
+  height: 12px;
+}
+
+@media (max-width: 768px) {
+  .anatomy-section {
+    padding: 1rem;
+  }
+
+  .anatomy-section__image-wrapper {
+    max-width: 240px;
+  }
+
+  .anatomy-section__indicator {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.4rem;
+  }
 }

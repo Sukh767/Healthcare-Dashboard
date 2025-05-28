@@ -5,13 +5,13 @@ import "../style/UpcomingSchedule.css"
 
 const UpcomingSchedule = ()=> {
   return (
-    <div className="upcoming-schedule">
-      <h2 className="upcoming-schedule__title">The Upcoming Schedule</h2>
+    <div className="upcoming-schedule bg-right-panel">
+      <h2 className="upcoming-schedule__title text-secondary">The Upcoming Schedule</h2>
 
       <div className="upcoming-schedule__content">
         {upcomingScheduleData.map((dayGroup, index) => (
           <div key={index}>
-            <h3 className="upcoming-schedule__day">{dayGroup.day}</h3>
+            <h3 className="upcoming-schedule__day text-muted">{dayGroup.day}</h3>
             <div className="upcoming-schedule__grid">
               {dayGroup.appointments.map((appointment, aptIndex) => (
                 <SimpleAppointmentCard

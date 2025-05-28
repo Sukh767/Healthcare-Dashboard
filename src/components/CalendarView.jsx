@@ -1,5 +1,5 @@
 import React from "react"
-import { ChevronLeft, ChevronRight } from "lucide-react"
+import { MoveLeft, MoveRight } from "lucide-react"
 import "../style/CalenderView.css"
 import calendarData from "../data/calendarData.js"
 
@@ -8,16 +8,16 @@ const CalendarView = () => {
 
   const appointmentCards = [
     { title: "Dentist", time: "09:00-11:00", doctor: "Dr Cameron Williamson", icon: "🦷", color: "card-blue" },
-    { title: "Physiotherapy Appointment", time: "11:00-12:00", doctor: "Dr Kevin Djores", icon: "🏃", color: "card-purple" },
+    { title: "Physiotherapy Appointment", time: "11:00-12:00", doctor: "Dr Kevin Djores", icon: "💪🏻", color: "card-purple" },
   ]
 
   return (
-    <div className="calendar-view">
+    <div className="calendar-view text-secondary">
       <div className="calendar-header">
-        <h2 className="calendar-title">October 2021</h2>
+        <h2 className="calendar-title text-secondary">October 2021</h2>
         <div className="calendar-nav">
-          <button><ChevronLeft className="icon" /></button>
-          <button><ChevronRight className="icon" /></button>
+          <button><MoveLeft className="icon" /></button>
+          <button><MoveRight className="icon" /></button>
         </div>
       </div>
 
@@ -30,7 +30,12 @@ const CalendarView = () => {
 
         <div className="calendar-dates">
           {calendarData.map((date, i) => (
-            <div key={i} className={`date-number ${date.day === "28" ? "highlighted" : ""}`}>{date.day}</div>
+            <div
+              key={i}
+              className={`date-number ${date.day === "26" ? "highlight-custom" : ""}`}
+            >
+              {date.day}
+            </div>
           ))}
         </div>
 

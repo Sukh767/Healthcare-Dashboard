@@ -1,7 +1,7 @@
 .activity {
-  background-color: #f6faff;
-    border-radius: var(--border-radius);
+    background-color: #f6faff;
     padding: 24px;
+    border-radius: 32px;
 }
 
 .activity__header {
@@ -19,7 +19,6 @@
 
 .activity__subtitle {
     font-size: 14px;
-    color: var(--color-gray-500);
 }
 
 .activity__chart {
@@ -54,7 +53,7 @@
 }
 
 .activity__bar--cyan {
-    background-color: #06b6d4;
+    background-color: #00e2ee;
 }
 
 .activity__bar--blue {
@@ -62,11 +61,11 @@
 }
 
 .activity__bar--purple {
-    background-color: #8b5cf6;
+    background-color: #010a4a;
 }
 
 .activity__day-label {
     font-size: 12px;
-    color: var(--color-gray-500);
     margin-top: 8px;
+    color: var(--secondary-text-color);
 }

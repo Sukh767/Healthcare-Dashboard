@@ -1,9 +1,6 @@
 .calendar-view {
-  /* background-color: #fff; */
   border-radius: 12px;
   padding: 24px;
-  /* box-shadow: 0 2px 6px rgba(0,0,0,0.05); */
-  
 }
 
 .calendar-header {
@@ -16,7 +13,6 @@
 .calendar-title {
   font-size: 1.25rem;
   font-weight: bold;
-  color: #111827;
 }
 
 .calendar-nav button {
@@ -30,7 +26,6 @@
 .icon {
   width: 16px;
   height: 16px;
-  color: #4b5563;
 }
 
 .calendar-week {
@@ -48,7 +43,6 @@
   text-align: center;
   font-size: 0.875rem;
   font-weight: 500;
-  color: #6b7280;
 }
 
 .calendar-dates {
@@ -62,11 +56,17 @@
   text-align: center;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #1f2937;
 }
 
 .date-number.highlighted {
   color: #2563eb;
+}
+
+.date-number.highlight-custom {
+  background-color: #abb0d9;
+  color: white;
+  border-radius: 8px;
+  padding: 4px 0;
 }
 
 .calendar-slots {
@@ -100,18 +100,24 @@
   background-color: #2563eb;
   color: white;
   font-weight: 500;
+  padding: 0.5rem;
+  border-radius: 12px;
 }
 
 .highlight-blue-light {
   background-color: #93c5fd;
   color: white;
   font-weight: 500;
+  padding: 0.5rem;
+  border-radius: 12px;
 }
 
 .highlight-purple {
-  background-color: #a78bfa;
+  background-color: #abb0d9;
   color: white;
   font-weight: 500;
+  padding: 0.5rem 0.75rem;
+   border-radius: 12px;
 }
 
 .calendar-cards {
@@ -120,6 +126,13 @@
   gap: 16px;
 }
 
+.calendar-cards h3{
+  line-height: 2rem;
+}
+
+.calendar-cards p{
+  margin-bottom: 4px;
+}
 @media (min-width: 768px) {
   .calendar-cards {
     grid-template-columns: repeat(2, 1fr);
@@ -135,11 +148,17 @@
 }
 
 .card-blue {
-  background-color: #2563eb;
+  color: white;
+  border-radius: 34px;
+  padding: 1.2rem;
+  background-color: #010a4a;
 }
 
 .card-purple {
-  background-color: #d7c4f8;
+  background-color: #dde2f9;
+  color: #111827;
+  border-radius: 34px;
+
 }
 
 .icon-large {

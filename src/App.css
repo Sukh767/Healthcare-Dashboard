@@ -11,7 +11,6 @@
   flex-direction: column;
 }
 
-/* Grid Layout for main content sections */
 .app__grid {
   display: grid;
   grid-template-rows: auto auto;
@@ -25,16 +24,6 @@
   padding: 1rem;
 }
 
-.app__section--overview {
-  /* Adjust if DashboardMainContent has internal padding already */
-  padding: 0;
-}
-
-.app__section--appointments {
-  /* Additional custom styles if needed */
-}
-
-/* Responsive tweaks */
 @media (max-width: 768px) {
   .app__grid {
     padding: 1rem;
