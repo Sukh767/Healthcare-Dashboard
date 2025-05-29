@@ -1,12 +1,13 @@
 import React from "react";
 import "../style/DashboardMainContent.css";
-import { BellIcon, SearchIcon, Plus, User } from "lucide-react";
+import { BellIcon, SearchIcon, Plus, User, ChevronDown } from "lucide-react";
 
 import AnatomySection from "./AnatomySection";
 import HealthStatusCards from "./HealthStatusCards";
 import ActivityFeed from "./ActivityFeed";
 import CalenderView from "./CalendarView";
 import UpcomingSchedule from "./UpcomingSchedule";
+import usersIcon from '../assets/user-bg-remove.png';
 
 const DashboardMainContent = () => {
   return (
@@ -15,11 +16,19 @@ const DashboardMainContent = () => {
         <div className="dashboard-main__header">
           <div className="dashboard-main__searchbar">
             <SearchIcon className="dashboard-main__search-icon" />
-            <input type="text" placeholder="Search..." />
+            <input type="text" placeholder="Search" />
           </div>
           <button className="dashboard-main__bell">
             <BellIcon fill="#1e2a78" />
           </button>
+        </div>
+
+        <div className="dashboard-main__title ">
+          <h2 className="text-secondary">Dashboard</h2>
+          <p className="dashboard-title__subtitle text-secondary">
+            This week <span className="text-secondary"></span>
+            <ChevronDown size={14}/>
+          </p>
         </div>
 
         <div className="dashboard-main__middle">
@@ -39,7 +48,7 @@ const DashboardMainContent = () => {
       <section className="dashboard-main__right">
         <div className="dashboard-main__right-header">
           <div className="icon-profile">
-          <User  />
+            <img src={usersIcon} alt="user image" />
           </div>
           <div className="icon-plus">
           <Plus />

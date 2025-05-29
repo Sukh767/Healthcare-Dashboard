@@ -30,6 +30,14 @@
   transition: background 0.2s ease;
 }
 
+.sidebar-link--active {
+  color: #1e3a8a;
+  border-radius: 8px;
+  font-weight: 500;
+  scale: 1.05;
+}
+
+
 .sidebar-icon {
   font-size: 1rem;
   margin-right: 6px;

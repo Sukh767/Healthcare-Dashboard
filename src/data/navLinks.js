@@ -12,7 +12,7 @@ import {
 
 export const navLinks = {
   general: [
-    { name: "Dashboard", icon: LayoutDashboard, color: "#007BFF" },
+    { name: "Dashboard", icon: LayoutDashboard, color: "#010a4a" },
     { name: "History", icon: ArrowDownUp, color: "#757575" },
     { name: "Calendar", icon: CalendarDays, color: "#757575" },
     { name: "Appointments", icon: CalendarPlus2, color: "#757575" },

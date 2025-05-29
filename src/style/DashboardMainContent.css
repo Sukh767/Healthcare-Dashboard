@@ -48,16 +48,30 @@
   cursor: pointer;
 }
 
+.dashboard-main__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: large;
+}
+
+.dashboard-title__subtitle{
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: small;
+
+}
+
 .dashboard-main__middle {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 2rem;
-  align-items: stretch; /* Ensures equal height columns */
+  align-items: stretch; 
 }
 
-
 .dashboard-main__anatomy {
-  padding: 1rem;
+  /* padding: 1rem; */
   border-radius: 12px;
   border: 1px solid #e0e0e0;
 }
@@ -65,9 +79,7 @@
 .dashboard-main__health-cards {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; 
-  height: 100%;                    
-  gap: 1rem;                      
+  justify-content: center;                      
 }
 
 
@@ -84,12 +96,14 @@
   background-color: #daecf7;
   padding: 2rem;
   border-radius: 12px;
+  justify-content: space-between;
 }
 
 .dashboard-main__right-header {
   display: flex;
   justify-content: flex-end;
   gap: 1rem;
+  align-items: center;
 }
 
 .icon-profile,
@@ -99,6 +113,17 @@
   cursor: pointer;
   padding: 0.5rem;
   border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-profile img{
+  width: 32px;
+  height: 32px;
+  
 }
 
 .dashboard-main__calendar,

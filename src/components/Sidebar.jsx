@@ -20,7 +20,7 @@ const Sidebar = () => {
           {navLinks.general.map((link, index) => {
             const Icon = link.icon;
             return (
-              <li key={index} className="text-sidebar">
+              <li key={index} className={`text-sidebar ${link.name === 'Dashboard' ? 'sidebar-link--active' : ''}`}>
                 <span className="sidebar-icon">
                   <Icon color={link.color}  size={18} strokeWidth={1.5} />
                 </span>

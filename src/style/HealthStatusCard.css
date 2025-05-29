@@ -1,7 +1,7 @@
 .health-cards {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 7rem;
 }
 
 .health-card {
@@ -11,6 +11,8 @@
   padding: 2.5rem;
   box-shadow: rgba(99, 99, 99, 0.043) 0px 2px 8px 0px;
 }
+
+
 
 .health-card__header {
   display: flex;

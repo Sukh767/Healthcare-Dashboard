@@ -12,13 +12,13 @@ export default function AnatomySection() {
           alt="Human Body Anatomy"
           className="anatomy-section__image"
         />
-        <div className="anatomy-section__indicator anatomy-section__indicator--heart">
-          <Heart className="anatomy-section__icon" />
-          <span>Healthy Heart</span>
+        <div className="anatomy-section__indicator anatomy-section__indicator--heart bg-secondary">
+          {/* <Heart fill="#F92024" className="anatomy-section__icon" /> */}
+          <span className="anatomy-section__icon"> ❤️&nbsp;&nbsp; Healthy Heart</span>
         </div>
-        <div className="anatomy-section__indicator anatomy-section__indicator--log">
-          <Zap className="anatomy-section__icon" />
-          <span>Healthy Log</span>
+        <div className="anatomy-section__indicator anatomy-section__indicator--leg bg-primary">
+          {/* <Zap className="anatomy-section__icon" /> */}
+          <span className="anatomy-section__icon"> 🦵🏻&nbsp;&nbsp; Healthy Leg</span>
         </div>
       </div>
     </div>
